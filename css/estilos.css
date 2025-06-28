@@ -8,7 +8,7 @@ body{
     height: 100%;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
-    background-image: url('img/mapache.jpg');
+    background-image: url('https://raw.githubusercontent.com/Chelitas/formulario-mapaches/refs/heads/main/img/mapache.jpg');
     background-attachment: fixed;
     background-size: cover;
     
