@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mapaches</title>
+        <link rel="stylesheet" href="css/estilos.css"> 
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Chelitas/iconos-mapaches/styles.css"> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,550;1,550&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="encabezado">
+                <h1 id="title">Encuesta sobre los Mapaches</h1>
+                <p id="description">Queremos conocer tu percepción, conocimientos y experiencias respecto a los mapaches.</p>
+            </div>
+
+            <form id="survey-form">
+                <label for="name" id="name-label">Nombre</label>
+                <input type="text" id="name" placeholder="Ingresa tu Nombre" required>
+
+                <label for="email" id="email-label">Correo Electrónico</label>
+                <input type="email" id="email" placeholder="Ingresa tu Correo Electrónico" required>
+
+                <label for="number" id="number-label">Edad</label>
+                <input type="number" id="number" min="18" max="140" placeholder="Ingresa tu Edad" required>
+                
+                <label for="dropdown">Selecciona tu Pais</label>
+                <select id="dropdown">
+                    <option>Colombia</option>
+                    <option>Estados Unidos</option>
+                    <option>Japón</option>
+                </select>
+
+                <h3>Cual es tu Genero</h3>
+                <div class="grupo-radio">
+                    <label for="hombre" class="radio-label">
+                        <input type="radio" name="sexo" value="hombre" id="hombre">
+                        <span class="radio-personalizado"></span>
+                         Maculino
+                    </label>
+                    <label for="mujer" class="radio-label">
+                        <input type="radio" name="sexo" value="mujer" id="mujer">
+                        <span class="radio-personalizado"></span>
+                        Femenino
+                    </label>
+                    <label for="otro" class="radio-label">
+                        <input type="radio" name="sexo" value="otro" id="otro">
+                        <span class="radio-personalizado"></span>
+                        Otro
+                    </label>
+                </div>
+
+
+                <h3>Sabes que es un Mapache?</h3>
+                <div class="grupo-radio">
+                    <label for="si" class="radio-label">
+                        <input type="radio" name="saber" value="si" id="si">
+                        <span class="radio-personalizado"></span>
+                        Si
+                    </label>
+                    <label for="no" class="radio-label">
+                        <input type="radio" name="saber" value="no" id="no">
+                        <span class="radio-personalizado"></span>
+                        No
+                    </label>
+                    <label for="noc" class="radio-label">
+                        <input type="radio" name="saber" value="noc" id="noc">
+                        <span class="radio-personalizado"></span>
+                        No Estoy Seguro/a
+                    </label>
+                </div>
+                
+
+                <h3>Has visto algun Mapache en tu vida?</h3>
+                <div class="grupo-cuadro">
+                    <label for="op01" class="cuadro-label">
+                        <input type="checkbox" value="internet" checked id="op01">
+                        <span class="cuadro-personalizado"></span>
+                        Si, en internet (Videos, Redes Sociales)
+                    </label>
+                    <label for="op02" class="cuadro-label">
+                        <input type="checkbox" value="silvestre" id="op02">
+                        <span class="cuadro-personalizado"></span>
+                        Si, en la naturaleza
+                    </label>
+                    <label for="op03" class="cuadro-label">
+                        <input type="checkbox" value="zoo" id="op03">
+                        <span class="cuadro-personalizado"></span>
+                        Si, en Cautiverio (Zoologicos)
+                    </label>
+                    <label for="op04" class="cuadro-label">
+                        <input type="checkbox" value="ciudad" id="op04">
+                        <span class="cuadro-personalizado"></span>
+                        Si, en la Ciudad
+                    </label>
+                    <label for="op05" class="cuadro-label">
+                        <input type="checkbox" value="no" id="op05">
+                        <span class="cuadro-personalizado"></span>
+                        No
+                    </label>
+                </div>
+                
+
+                <h3>Donde crees que viven los Mapaches?</h3>
+                <div class="grupo-cuadro">
+                    <label for="op11" class="cuadro-label">
+                        <input type="checkbox" value="bosque" checked id="op11">
+                        <span class="cuadro-personalizado"></span>
+                        Bosques
+                    </label>
+                    <label for="op12" class="cuadro-label">
+                        <input type="checkbox" value="ciudad" id="op12">
+                        <span class="cuadro-personalizado"></span>
+                        Zonas urbanas
+                    </label>
+                    <label for="op13" class="cuadro-label">
+                        <input type="checkbox" value="agua" id="op13">
+                        <span class="cuadro-personalizado"></span>
+                        Cerca de rios o lagos
+                    </label>
+                    <label for="op14" class="cuadro-label">
+                        <input type="checkbox" value="ruinas" id="op14">
+                        <span class="cuadro-personalizado"></span>
+                        Casas abandonadas
+                    </label>
+                    <label for="op15" class="cuadro-label">
+                        <input type="checkbox" value="noc" id="op15">
+                        <span class="cuadro-personalizado"></span>
+                        No lo se
+                    </label>
+                </div>
+                
+
+                <h3>Crees que los Mapaches pueden ser peligrosos?</h3>
+                <div class="grupo-radio">
+                    <label for="si1" class="radio-label">
+                        <input type="radio" name="peligro" value="si" id="si1">
+                        <span class="radio-personalizado"></span>
+                        Si
+                    </label>
+                    <label for="no1" class="radio-label">
+                        <input type="radio" name="peligro" value="no" id="no1">
+                        <span class="radio-personalizado"></span>
+                        No
+                    </label>
+                    <label for="noc1" class="radio-label">
+                        <input type="radio" name="peligro" value="depende" id="noc1">
+                        <span class="radio-personalizado"></span>
+                        Depende de la situación
+                    </label>
+                </div>
+
+                <h3>Que opinas de la presencia de los Mapaches en zonas urbanas?</h3>
+                <div class="grupo-radio-vertical">
+                    <label for="op21" class="radio-label">
+                        <input type="radio" name="presencia" value="peligrosos" id="op21">
+                        <span class="radio-personalizado"></span>
+                        Son una amenaza
+                    </label>
+                    <label for="op22" class="radio-label">
+                        <input type="radio" name="presencia" value="indiferente" id="op22">
+                        <span class="radio-personalizado"></span>
+                        No me molestan
+                    </label>
+                    <label for="op23" class="radio-label">
+                        <input type="radio" name="presencia" value="interesnate" id="op23">
+                        <span class="radio-personalizado"></span>
+                        Me parecen interesantes
+                    </label>
+                    <label for="op24" class="radio-label">
+                        <input type="radio" name="presencia" value="noc" id="op24">
+                        <span class="radio-personalizado"></span>
+                        No tengo una opinion
+                    </label>
+                </div>
+                
+
+                <h3>Crees que los Mapaches deberian ser protegidos como especie silvestre?</h3>
+                <div class="grupo-radio">
+                    <label for="si2" class="radio-label">
+                        <input type="radio" name="proteger" value="si" id="si2">
+                        <span class="radio-personalizado"></span>
+                        Si
+                    </label>
+                    <label for="no2" class="radio-label">
+                        <input type="radio" name="proteger" value="no" id="no2">
+                        <span class="radio-personalizado"></span>
+                        No
+                    </label>
+                    <label for="noc2" class="radio-label">
+                        <input type="radio" name="proteger" value="noc" id="noc2">
+                        <span class="radio-personalizado"></span>
+                        No estoy Seguro/a
+                    </label>
+                </div>
+
+                <h3>Sandias que los Mapaches pueden transmitir enfermedades si no se manipulan con precaución?</h3>
+                <div class="grupo-radio">
+                    <label for="si3" class="radio-label">
+                        <input type="radio" name="enfermedad" value="si" id="si3">
+                        <span class="radio-personalizado"></span>
+                        Si
+                    </label>
+                    <label for="no3" class="radio-label">
+                        <input type="radio" name="enfermedad" value="no" id="no3">
+                        <span class="radio-personalizado"></span>
+                        No
+                    </label>
+                </div>
+
+                <h3>Te gustaría aprender más sobre los mapaches y su papel en los ecosistemas?</h3>
+                <div class="grupo-radio">
+                    <label for="si4" class="radio-label">
+                        <input type="radio" name="aprender" value="si" id="si4">
+                        <span class="radio-personalizado"></span>
+                        Si
+                    </label>
+                    <label for="no4" class="radio-label">
+                        <input type="radio" name="aprender" value="no" id="no4">
+                        <span class="radio-personalizado"></span>
+                        No
+                    </label>
+                    <label for="noc4" class="radio-label">
+                        <input type="radio" name="aprender" value="talvez" id="noc4">
+                        <span class="radio-personalizado"></span>
+                        Tal vez
+                    </label>
+                </div>
+
+                <h3>Algo que quieras decir?</h3>
+                <textarea></textarea>
+
+                <input type="submit" name="" id="submit" value="Enviar Encuesta">
+            
+            </form>
+
+            <footer>
+                <div>
+                    <div class="firma">
+                        <p>Hecho con <span class="icon-heart"></span> por Juan Sebastian Pastrana Durán </p>
+                    </div>
+                    <div class="redes">
+                        <a href="https://github.com/Chelitas" target="_blank"><span class="icon-mapachito-github"></span></a>
+                        <a href="mailto:sepa.du@hotmail.com"><span class="icon-mapachito-mail"></span></a>
+                        <a href="https://www.linkedin.com/in/juan-sebastian-pastrana-duran-77996178/" target="_blank"><span class="icon-mapachito-linkedin"></span></a>
+                    </div>
+                    <div class="copyright">
+                        <p>© 2025 Juan Sebastian Pastrana Durán. Todos los derechos reservados.</p>
+                        <span class="icon-mapachito"></span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
